@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Solar System</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .sun {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(50% - 100px/2);
+            top: calc(50% - 100px/2);
+            background-color: yellow;
+        }
+
+        .mercury {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(50% - 30px/2);
+            top: calc(50% - 30px/2);
+            background-color: grey;
+            animation: mercury-ani 1s linear infinite;
+        }
+
+        .venus {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(50% - 32px/2);
+            top: calc(50% - 32px/2);
+            background-color: yellowgreen;
+
+            animation: venus-ani 1.2s linear infinite;
+        }
+
+        .earth {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(50% - 40px/2);
+            top: calc(50% - 40px/2);
+            background-color: rgb(51, 134, 161);
+            animation: earth-ani 1.5s linear infinite;
+        }
+
+        .mars {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(50% - 35px/2);
+            top: calc(50% - 35px/2);
+            background-color: brown;
+            animation: mars-ani 1.7s linear infinite;
+        }
+
+        .jupiter {
+            width: 49px;
+            height: 49px;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(50% - 49px/2);
+            top: calc(50% - 49px/2);
+            background-color: darkgoldenrod;
+            animation: jupiter-ani 1.9s linear infinite;
+        }
+
+        .saturn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(50% - 44px/2);
+            top: calc(50% - 44px/2);
+            background-color: goldenrod;
+            animation: saturn-ani 2.1s linear infinite;
+        }
+
+        .uranus {
+            width: 41px;
+            height: 41px;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(50% - 41px/2);
+            top: calc(50% - 41px/2);
+            background-color: skyblue;
+            animation: uranus-ani 2.3s linear infinite;
+        }
+
+        .neptune {
+            width: 41px;
+            height: 41px;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(50% - 41px/2);
+            top: calc(50% - 41px/2);
+            background-color: blue;
+            animation: neptune-ani 2.5s linear infinite;
+        }
+
+        @keyframes mercury-ani {
+            from {
+                transform: rotate(0deg) translateX(90px);
+            }
+
+            to {
+                transform: rotate(360deg) translateX(90px);
+            }
+        }
+
+        @keyframes venus-ani {
+            from {
+                transform: rotate(0deg) translateX(130px);
+            }
+
+            to {
+                transform: rotate(360deg) translateX(130px);
+            }
+        }
+
+        @keyframes earth-ani {
+            from {
+                transform: rotate(0deg) translateX(170px);
+            }
+
+            to {
+                transform: rotate(360deg) translateX(170px);
+            }
+        }
+
+        @keyframes mars-ani {
+            from {
+                transform: rotate(0deg) translateX(210px);
+            }
+
+            to {
+                transform: rotate(360deg) translateX(210px);
+            }
+        }
+
+        @keyframes jupiter-ani {
+            from {
+                transform: rotate(0deg) translateX(250px);
+            }
+
+            to {
+                transform: rotate(360deg) translateX(250px);
+            }
+        }
+
+        @keyframes saturn-ani {
+            from {
+                transform: rotate(0deg) translateX(290px);
+            }
+
+            to {
+                transform: rotate(360deg) translateX(290px);
+            }
+        }
+
+        @keyframes uranus-ani {
+            from {
+                transform: rotate(0deg) translateX(330px);
+            }
+
+            to {
+                transform: rotate(360deg) translateX(330px);
+            }
+        }
+
+        @keyframes neptune-ani {
+            from {
+                transform: rotate(0deg) translateX(380px);
+            }
+
+            to {
+                transform: rotate(360deg) translateX(380px);
+            }
+        }
+    </style>
+</head>
+
+<body  style="background-color: black;">
+    <h2 style="color: aliceblue; text-align: center;">Solar System</h2>
+   <div class="container">
+    <div class="sun">
+    
+    </div>
+    <div class="mercury">
+
+    </div>
+    <div class="venus">
+
+    </div>
+    <div class="earth">
+
+    </div>
+    <div class="mars">
+   
+    </div>
+    <div class="jupiter">
+
+    </div>
+    <div class="saturn">
+
+    </div>
+    <div class="uranus">
+
+    </div>
+    <div class="neptune">
+
+    </div>
+   </div>
+</body>
+
+</html>
