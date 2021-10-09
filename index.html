@@ -4,19 +4,23 @@
 <head>
     <title>Solar System</title>
     <style>
+        .galaxy{
+            background-image: url("https://images.unsplash.com/photo-1515966306809-37aaff37a72f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Z2FsYXh5fHx8fHx8MTYzMzc4NzAyNg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600");
+           
+        }
         .container {
             width: 100%;
-            height: 100%;
+            height: 100vh;
             position: absolute;
         }
 
         .sun {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             position: absolute;
-            left: calc(50% - 100px/2);
-            top: calc(50% - 100px/2);
+            left: calc(50% - 80px/2);
+            top: calc(50% - 80px/2);
             background-color: yellow;
         }
 
@@ -28,7 +32,7 @@
             left: calc(50% - 30px/2);
             top: calc(50% - 30px/2);
             background-color: grey;
-            animation: mercury-ani 1s linear infinite;
+            animation: mercury-ani 1.7s linear infinite;
         }
 
         .venus {
@@ -40,7 +44,7 @@
             top: calc(50% - 32px/2);
             background-color: yellowgreen;
 
-            animation: venus-ani 1.2s linear infinite;
+            animation: venus-ani 1.9s linear infinite;
         }
 
         .earth {
@@ -51,7 +55,7 @@
             left: calc(50% - 40px/2);
             top: calc(50% - 40px/2);
             background-color: rgb(51, 134, 161);
-            animation: earth-ani 1.5s linear infinite;
+            animation: earth-ani 2.3s linear infinite;
         }
 
         .mars {
@@ -62,40 +66,40 @@
             left: calc(50% - 35px/2);
             top: calc(50% - 35px/2);
             background-color: brown;
-            animation: mars-ani 1.7s linear infinite;
+            animation: mars-ani 2.7s linear infinite;
         }
 
         .jupiter {
-            width: 49px;
-            height: 49px;
-            border-radius: 50%;
-            position: absolute;
-            left: calc(50% - 49px/2);
-            top: calc(50% - 49px/2);
-            background-color: darkgoldenrod;
-            animation: jupiter-ani 1.9s linear infinite;
-        }
-
-        .saturn {
             width: 44px;
             height: 44px;
             border-radius: 50%;
             position: absolute;
             left: calc(50% - 44px/2);
             top: calc(50% - 44px/2);
-            background-color: goldenrod;
-            animation: saturn-ani 2.1s linear infinite;
+            background-color: darkgoldenrod;
+            animation: jupiter-ani 3.1s linear infinite;
         }
 
-        .uranus {
+        .saturn {
             width: 41px;
             height: 41px;
             border-radius: 50%;
             position: absolute;
             left: calc(50% - 41px/2);
             top: calc(50% - 41px/2);
+            background-color: goldenrod;
+            animation: saturn-ani 3.5s linear infinite;
+        }
+
+        .uranus {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(50% - 40px/2);
+            top: calc(50% - 40px/2);
             background-color: skyblue;
-            animation: uranus-ani 2.3s linear infinite;
+            animation: uranus-ani 4s linear infinite;
         }
 
         .neptune {
@@ -106,56 +110,56 @@
             left: calc(50% - 41px/2);
             top: calc(50% - 41px/2);
             background-color: blue;
-            animation: neptune-ani 2.5s linear infinite;
+            animation: neptune-ani 4.6s linear infinite;
         }
 
         @keyframes mercury-ani {
             from {
-                transform: rotate(0deg) translateX(90px);
+                transform: rotate(0deg) translateX(70px);
             }
 
             to {
-                transform: rotate(360deg) translateX(90px);
+                transform: rotate(360deg) translateX(70px);
             }
         }
 
         @keyframes venus-ani {
             from {
-                transform: rotate(0deg) translateX(130px);
+                transform: rotate(0deg) translateX(110px);
             }
 
             to {
-                transform: rotate(360deg) translateX(130px);
+                transform: rotate(360deg) translateX(110px);
             }
         }
 
         @keyframes earth-ani {
             from {
-                transform: rotate(0deg) translateX(180px);
+                transform: rotate(0deg) translateX(160px);
             }
 
             to {
-                transform: rotate(360deg) translateX(180px);
+                transform: rotate(360deg) translateX(160px);
             }
         }
 
         @keyframes mars-ani {
             from {
-                transform: rotate(0deg) translateX(230px);
+                transform: rotate(0deg) translateX(210px);
             }
 
             to {
-                transform: rotate(360deg) translateX(230px);
+                transform: rotate(360deg) translateX(210px);
             }
         }
 
         @keyframes jupiter-ani {
             from {
-                transform: rotate(0deg) translateX(270px);
+                transform: rotate(0deg) translateX(260px);
             }
 
             to {
-                transform: rotate(360deg) translateX(270px);
+                transform: rotate(360deg) translateX(260px);
             }
         }
 
@@ -171,27 +175,28 @@
 
         @keyframes uranus-ani {
             from {
-                transform: rotate(0deg) translateX(350px);
+                transform: rotate(0deg) translateX(360px);
             }
 
             to {
-                transform: rotate(360deg) translateX(350px);
+                transform: rotate(360deg) translateX(360px);
             }
         }
 
         @keyframes neptune-ani {
             from {
-                transform: rotate(0deg) translateX(400px);
+                transform: rotate(0deg) translateX(410px);
             }
 
             to {
-                transform: rotate(360deg) translateX(400px);
+                transform: rotate(360deg) translateX(410px);
             }
         }
     </style>
 </head>
 
-<body  style="background-color: black;">
+<body class="galaxy">
+    
     <h2 style="color: aliceblue; text-align: center;">Solar System</h2>
    <div class="container">
     <div class="sun">
